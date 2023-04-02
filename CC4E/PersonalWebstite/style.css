@@ -86,14 +86,58 @@
     height: 100vh;
     margin: 0 300px;
 }
+.skill h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #66bfbf;
+    padding: 80px 0;
+}
+.skill h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #66bfbf;
+    padding: 20px 0;
+}
+.skill p {
+    font-size: 20px;
+}
+.skill #skill-01 {
+    position: relative;
+}
+.skill #skill-01  img {
+    width: 250px;
+    border-radius: 10%;
+    /* position: absolute;
+    left: 0; */
+}
+.skill #skill-01  span {
+    width: 900px;
+    position: absolute;
+    right: 0;
+}
+.skill #skill-02 {
+    position: relative;
+}
+.skill #skill-02  img {
+    width: 250px;
+    border-radius: 10%;
+    position: absolute;
+    right: 0;
+}
+.skill #skill-02  span {
+    width: 900px;
+    position: absolute;
+    left: 0;
+}
 .contact {
-
     background-color: #e4f9f5;
     text-align: center;
 }
 .contact h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    font-weight: bold;
     color: #66bfbf;
     padding: 80px 0;
 }
@@ -126,7 +170,39 @@
 }
 .footer {
     text-align: center;
+    background-color: #66bfbf;
+    height: 25vh;
 }
-.footer li {
-    
+.footer a {
+    font-size: 25px;
+    color: #017676;
+}
+.footer {
+    position: relative;
+}
+.footer #link1 {
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    transform: translate(-50%, 0);
+}
+.footer #link2 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.footer #link3 {
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    transform: translate(-50%, 0);
+}
+.footer p {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

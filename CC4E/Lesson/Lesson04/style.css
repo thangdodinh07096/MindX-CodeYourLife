@@ -1,0 +1,56 @@
+.parent {
+    background-color: rgb(204, 255, 93);
+}
+.child {
+    background-color: aqua;
+    border: 1px black solid;
+    display: inline;
+    /* không style được width height */
+}
+.child1 {
+    background-color: rgb(157, 112, 216);
+    border: 1px black solid;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+.child2 {
+    background-color: rgb(199, 161, 55);
+    border: 1px black solid;
+    display: block;
+    /* không style được width height */
+}
+.flex-box {
+    height: 200px;
+    background-color: bisque;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.flex-item {
+    color: aliceblue;
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}    
+.grid-box {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+}
+.grid-item {
+    color: aliceblue;
+    background-color: blueviolet;
+    border: 1px black solid;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 5px;
+} 

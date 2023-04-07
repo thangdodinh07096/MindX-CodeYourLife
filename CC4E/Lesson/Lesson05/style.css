@@ -1,0 +1,19 @@
+.main {
+    height: 300px;
+}
+
+@media screen {
+    body {
+        background-color: yellow;
+    }
+}
+
+.max-width {
+    background-color: rgb(255, 84, 84);
+}
+
+@media only screen and (max-width: 1024px ){
+    .max-width {
+        background-color: aqua;
+    }
+}

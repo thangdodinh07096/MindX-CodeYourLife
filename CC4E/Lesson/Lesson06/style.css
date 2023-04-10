@@ -1,0 +1,21 @@
+a:hover {
+    color: brown;
+}
+
+a:visited {
+    color: chartreuse;
+}
+
+.parent {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.child {
+    background-color: coral;
+    display: none;
+}
+
+.parent:hover .child{
+    display: block;
+}

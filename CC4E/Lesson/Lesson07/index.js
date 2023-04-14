@@ -13,3 +13,14 @@ console.log(x);
 console.log(y);
 console.log(z);
 console.log(t);
+let name = prompt("Name cow call")
+console.log(` 
+__________________
+< Hello, anh ${name} >
+ ------------------
+        \   ^__^
+         \  (oo)\_______
+           (__)\       )\/\/\/
+              ||----w |
+              ||     ||
+                `);

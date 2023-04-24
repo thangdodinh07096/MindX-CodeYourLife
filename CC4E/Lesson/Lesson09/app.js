@@ -55,3 +55,25 @@ for (let carKey in myCar) {
     console.log("Chi tiết về ", carKey, " là: ", value);
 }
 
+console.log(" ------------------------------------------");
+// kiến thức về Function
+
+function greeting() {
+    console.log("Hello");
+}
+greeting();
+
+function greetingName(name) {
+    return name;
+}
+greetingName("Thang");
+
+function typeAndPrice(type, price) {
+    console.log("Type of car is " + type + ", HP of car is " + price);
+}
+typeAndPrice("mercedez", "20.000$")
+
+function theOwner(name) {
+    console.log(name + " is the owner of this car!");
+}
+theOwner(greetingName("Thang"));

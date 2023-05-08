@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <style>
+        #login {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        input {
+            height: 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="errorMsg" style="color: red;"></p>
+    <form id="login">
+        <input name="user" type="username" placeholder="User name">
+        <input name="email" type="email" placeholder="Email">
+        <input name="pwd" type="password" placeholder="Password">
+        <input name="pwdConfirm" type="password" placeholder="Password Confirm">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

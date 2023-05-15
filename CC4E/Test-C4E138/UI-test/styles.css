@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+
+}
+
+#header {
+    padding-top: 100px;
+}
+
+#logo {
+    width: 91px;
+    height: 40px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151B32;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+    padding: 16px !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.isActive>.nav-link {
+    --bs-nav-link-color: white !important;
+    background: #849FFF;
+    border-radius: 8px;
+}
+
+img {
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-family: 'Merriweather';
+    font-size: 23px;
+    color: #151B32;
+    font-weight: bold;
+}
+
+.card {
+    height: 208px;
+    border-radius: 16px;
+    padding: 0;
+    --bs-card-border-width: 0;
+}
+
+.cardActive {
+    box-shadow: 0px 8px 23px 0px #DAE0F9B2;
+    --bs-card-border-width: 1px !important;
+}
+
+span {
+    color: #516FD4;
+    font-size: 12px;
+    border: 1px solid #BFC8E6;
+    border-radius: 10px;
+    padding: 3px;
+}

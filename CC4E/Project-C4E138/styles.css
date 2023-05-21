@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.find-rooms-title {
+    font-family: 'Old Standard TT', serif;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#filter {
+    background-color: #e5d8cb;
+    height: 260px;
+    font-size: 1.2rem;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    #filter {
+        height: 300px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #filter {
+        align-items: center;
+        width: 95%;
+        margin: 10px;
+    }
+
+    #list-room {
+        width: 100%;
+    }
+}
+
+.filter-title {
+    font-family: 'Old Standard TT', serif;
+    padding-left: 16px;
+    margin: 10px 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-name {
+    font-size: 20px;
+    padding: 3px 0;
+    color: #c19b76;
+    font-weight: bold;
+    margin: 0;
+    line-height: 28px;
+}
+
+.rating {
+    display: block;
+    color: white;
+    background: darkblue;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px 10px 10px 0;
+}
+
+.room-options {
+    color: #66bb66;
+}
+
+.room-price {
+    font-size: 25px;
+    color: #fd5050;
+}
+
+.btn-add-to-card {
+    --bs-btn-color: var(--bs-white) !important;
+    --bs-btn-bg: #c19b76 !important;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: rgb(100, 100, 100);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    vertical-align: middle;
+    border-style: none;
+}

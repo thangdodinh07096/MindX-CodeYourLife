@@ -94,7 +94,19 @@ const hasFitnessCenter = document.getElementsByClassName("hasFitnessCenter");
 let listRoom = document.getElementById('list-room')
 let checkBoxFilter = document.querySelectorAll(".filter-checkbox");
 
-
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 function filterHasFreeCancellation() {
     listRoom.innerHTML = ``;
@@ -124,8 +136,8 @@ function filterHasFreeCancellation() {
                     <div class="room-options hasParking">Onsite parking</div>
                     <div class="room-options allowsPets">Allows Pets</div>
                     <div class="room-options hasFitnessCenter">Fitness center</div>
-                    <div class="room-price pricePerNight">${hotel.pricePerNight} <span style="font-size: 20px;"
-                            color: black;>per night</span></div>
+                    <div class="room-price pricePerNight">${hotel.pricePerNight}$ <span style="font-size: 20px;
+                            color: black;">per night</span></div>
                     <p class="card-text"><small class="text-body-tertiary">Last updated ${hotel.update} mins
                             ago</small>
                     </p>
@@ -187,8 +199,8 @@ function filterIncludesBreakfast() {
                     <div class="room-options hasParking">Onsite parking</div>
                     <div class="room-options allowsPets">Allows Pets</div>
                     <div class="room-options hasFitnessCenter">Fitness center</div>
-                    <div class="room-price pricePerNight">${hotel.pricePerNight} <span style="font-size: 20px;"
-                            color: black;>per night</span></div>
+                    <div class="room-price pricePerNight">${hotel.pricePerNight}$ <span style="font-size: 20px;
+                            color: black;">per night</span></div>
                     <p class="card-text"><small class="text-body-tertiary">Last updated ${hotel.update} mins
                             ago</small>
                     </p>
@@ -250,8 +262,8 @@ function filterhasParking() {
                     <div class="room-options hasParking">Onsite parking</div>
                     <div class="room-options allowsPets">Allows Pets</div>
                     <div class="room-options hasFitnessCenter">Fitness center</div>
-                    <div class="room-price pricePerNight">${hotel.pricePerNight} <span style="font-size: 20px;"
-                            color: black;>per night</span></div>
+                    <div class="room-price pricePerNight">${hotel.pricePerNight}$ <span style="font-size: 20px;
+                            color: black;">per night</span></div>
                     <p class="card-text"><small class="text-body-tertiary">Last updated ${hotel.update} mins
                             ago</small>
                     </p>
@@ -312,8 +324,8 @@ function filterAllowsPets() {
                     <div class="room-options hasParking">Onsite parking</div>
                     <div class="room-options allowsPets">Allows Pets</div>
                     <div class="room-options hasFitnessCenter">Fitness center</div>
-                    <div class="room-price pricePerNight">${hotel.pricePerNight} <span style="font-size: 20px;"
-                            color: black;>per night</span></div>
+                    <div class="room-price pricePerNight">${hotel.pricePerNight}$ <span style="font-size: 20px;
+                            color: black;">per night</span></div>
                     <p class="card-text"><small class="text-body-tertiary">Last updated ${hotel.update} mins
                             ago</small>
                     </p>
@@ -374,8 +386,8 @@ function filterHasFitnessCenter() {
                     <div class="room-options hasParking">Onsite parking</div>
                     <div class="room-options allowsPets">Allows Pets</div>
                     <div class="room-options hasFitnessCenter">Fitness center</div>
-                    <div class="room-price pricePerNight">${hotel.pricePerNight} <span style="font-size: 20px;"
-                            color: black;>per night</span></div>
+                    <div class="room-price pricePerNight">${hotel.pricePerNight}$ <span style="font-size: 20px;
+                            color: black;">per night</span></div>
                     <p class="card-text"><small class="text-body-tertiary">Last updated ${hotel.update} mins
                             ago</small>
                     </p>
